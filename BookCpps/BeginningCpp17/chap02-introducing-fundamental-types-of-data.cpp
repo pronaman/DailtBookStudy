@@ -105,5 +105,10 @@ TEST(Chap02, WorkingWithUnicdeCharacters)
 
 	char32_t letter32{ U'B' };
 	char32_t cyr32{ U'\x044f' };
+}
 
+TEST(Chap02, AutoKeyword)
+{
+	auto list = { 1, 2, 3 };
+	
 }
