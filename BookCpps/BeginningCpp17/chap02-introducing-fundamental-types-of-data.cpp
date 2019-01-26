@@ -77,3 +77,33 @@ TEST(Chap02, MathematicalFunctions)
 	EXPECT_EQ(3, round(3.4));
 	EXPECT_EQ(-3, round(-2.5));
 }
+
+TEST(Chap02, ExplicitTypeConversion)
+{
+	double value1{ 10.9 };
+	double value2{ 15.9 };
+	int wholeNumber{ static_cast<int>(value1) + static_cast<int>(value2) };
+	EXPECT_EQ(25, wholeNumber);	
+}
+
+//TEST(Chap02, FindingTheLimits)
+//{
+//	double maxValue{ std::numeric_limits<double>::max() };
+//	//EXPECT_EQ(1.79769e+308, maxValue);
+//	//EXPECT_TRUE(abs(1.79769e+308 - maxValue) < 3331);
+//	EXPECT_EQ(33, abs(1.79769e+308 - maxValue));
+//}
+
+
+TEST(Chap02, WorkingWithUnicdeCharacters)
+{
+	wchar_t wch{ L'Z' };
+	wchar_t wch2{ L'\x0438' };
+
+	char16_t letter{ u'B' };
+	char16_t cyr{ u'\x0438' };
+
+	char32_t letter32{ U'B' };
+	char32_t cyr32{ U'\x044f' };
+
+}
