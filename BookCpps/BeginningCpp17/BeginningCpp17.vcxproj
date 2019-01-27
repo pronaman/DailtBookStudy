@@ -40,6 +40,7 @@
     <ClCompile Include="chap03-working-with-fundamental-data-types.cpp" />
     <ClCompile Include="chap04-making-decisions.cpp" />
     <ClCompile Include="chap05-array-and-loops.cpp" />
+    <ClCompile Include="chap06-pointers-and-references.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
