@@ -1,6 +1,6 @@
 #include "pch.h"
 
-TEST(Chap02, Initilization)
+TEST(chap02, Initilization)
 {
 	const int countDefault0{0};
 	EXPECT_EQ(0, countDefault0);
@@ -16,14 +16,14 @@ TEST(Chap02, Initilization)
 	EXPECT_EQ(15000000, distance);
 }
 
-TEST(Chap02, InitializationWithoutPermittedRange)
+TEST(chap02, InitializationWithoutPermittedRange)
 {
 	//const unsigned char highScore{ 513 };
 	const unsigned char highScore = 513;
 	EXPECT_FALSE(513 == highScore);
 }
 
-TEST(Chap02, HexadecimalLiterals)
+TEST(chap02, HexadecimalLiterals)
 {
 	const unsigned int color = 0x0f0d0e;
 	EXPECT_EQ(0x0f0d0e, color);
@@ -35,14 +35,14 @@ TEST(Chap02, HexadecimalLiterals)
 	EXPECT_EQ(57005, value);
 }
 
-TEST(Chap02, OctalLiterals)
+TEST(chap02, OctalLiterals)
 {
 	const int value1 = 0657;
 	const int value2{ 0657 };
 	EXPECT_EQ(431, value2);
 }
 
-TEST(Chap02, SizeOf)
+TEST(chap02, SizeOf)
 {
 	int height{ 74 };
 	EXPECT_EQ(4, sizeof(height));
@@ -52,7 +52,7 @@ TEST(Chap02, SizeOf)
 	EXPECT_EQ(4, sizeof(height * height / 2));
 }
 
-TEST(Chap02, MathematicalFunctions)
+TEST(chap02, MathematicalFunctions)
 {
 	EXPECT_EQ(2, abs(-2));
 
@@ -78,7 +78,7 @@ TEST(Chap02, MathematicalFunctions)
 	EXPECT_EQ(-3, round(-2.5));
 }
 
-TEST(Chap02, ExplicitTypeConversion)
+TEST(chap02, ExplicitTypeConversion)
 {
 	double value1{ 10.9 };
 	double value2{ 15.9 };
@@ -95,7 +95,7 @@ TEST(Chap02, ExplicitTypeConversion)
 //}
 
 
-TEST(Chap02, WorkingWithUnicdeCharacters)
+TEST(chap02, WorkingWithUnicdeCharacters)
 {
 	wchar_t wch{ L'Z' };
 	wchar_t wch2{ L'\x0438' };
@@ -107,7 +107,7 @@ TEST(Chap02, WorkingWithUnicdeCharacters)
 	char32_t cyr32{ U'\x044f' };
 }
 
-TEST(Chap02, AutoKeyword)
+TEST(chap02, AutoKeyword)
 {
 	auto list = { 1, 2, 3 };
 	
